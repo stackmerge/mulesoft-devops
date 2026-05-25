@@ -25,8 +25,8 @@ jobs:
         
     - name: Updating POM Version   
       run: |
-        git config user.email "satishdindayalp@wilcosource.com"
-        git config user.name "ash-citiustech"
+        git config user.email "email ID"
+        git config user.name "Username"
         git config pull.rebase false
         git checkout dev
         mvn build-helper:parse-version versions:set -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.nextIncrementalVersion} versions:commit -s settings.xml --file pom.xml
